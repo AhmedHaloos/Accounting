@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+
+         <TextView
+        android:id="@+id/textView14"
+        style="@style/tv_title_style"
+        android:layout_weight="2"
+        android:text="فواتير المشتريات" />
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/srchview_background"
+        android:padding="4dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp"
+        android:weightSum="2">
+
+        <Button
+            style="@style/btn_style_main_div"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#D1CFCF"
+            android:text="إلى تاريخ"
+            android:textColor="#000000" />
+
+        <Button
+            style="@style/btn_style_main_div"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#D1CFCF"
+            android:text="من تاريخ"
+            android:textColor="#000000" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:layout_weight="5"
+        android:padding="4dp" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/buy_new_bill"
+        style="@style/add_btn_style"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1"
+        android:text="إضافة فاتورة"
+        />
+</LinearLayout>

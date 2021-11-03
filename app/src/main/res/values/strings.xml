@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">POS Saror</string>
+    <string name="managment_name">الأدارة</string>
+    <string name="client_name">العميل</string>
+    <string name="delegate_name">المندوب</string>
+    <string name="breakline_new_client">نوع العميل</string>
+    <string name="login_underlinetext_btn"><u>نسيت كلمة السر</u></string>
+</resources>

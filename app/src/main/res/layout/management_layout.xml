@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:backgroundTint="#000000"
+    android:animateLayoutChanges="true" >
+
+    <androidx.core.widget.NestedScrollView
+        style="@style/management_cardview_style"
+        android:background="#000000">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="4dp">
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/management_cardview_style"
+                    android:backgroundTint="#000000"
+                    android:id="@+id/management_store">
+
+                    <LinearLayout style="@style/management_linearlayout_style">
+
+                        <ImageView
+                            style="@style/management_imageview_style"
+                            app:srcCompat="@drawable/store" />
+
+                        <TextView
+                            style="@style/management_textview_style"
+                            android:text="إدارة المخازن" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/management_cardview_style"
+                    android:id="@+id/management_offer">
+
+                    <LinearLayout style="@style/management_linearlayout_style">
+
+                        <ImageView
+                            style="@style/management_imageview_style"
+                            app:srcCompat="@drawable/offer" />
+
+                        <TextView
+                            style="@style/management_textview_style"
+                            android:text="عروض" />
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="4dp">
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/management_cardview_style"
+                    android:id="@+id/management_sell">
+
+                    <LinearLayout style="@style/management_linearlayout_style">
+
+                        <ImageView
+                            style="@style/management_imageview_style"
+                            app:srcCompat="@drawable/sell" />
+
+                        <TextView
+                            style="@style/management_textview_style"
+                            android:text="مبيعات" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/management_cardview_style"
+                    android:id="@+id/management_buy">
+
+                    <LinearLayout style="@style/management_linearlayout_style">
+
+                        <ImageView
+                            style="@style/management_imageview_style"
+                            app:srcCompat="@drawable/buy" />
+
+                        <TextView
+                            style="@style/management_textview_style"
+                            android:text="مشتريات" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="4dp">
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/management_cardview_style"
+                    android:id="@+id/management_clients">
+
+                    <LinearLayout style="@style/management_linearlayout_style">
+
+                        <ImageView
+                            style="@style/management_imageview_style"
+                            app:srcCompat="@drawable/clients" />
+
+                        <TextView
+                            style="@style/management_textview_style"
+                            android:text="عملاء" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/management_cardview_style"
+                    android:id="@+id/management_delegates">
+
+                    <LinearLayout style="@style/management_linearlayout_style">
+
+                        <ImageView
+                            style="@style/management_imageview_style"
+                            app:srcCompat="@drawable/delegate" />
+
+                        <TextView
+                            style="@style/management_textview_style"
+                            android:text="مندوبين" />
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:padding="4dp">
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/management_cardview_style"
+                    android:id="@+id/management_suppliers">
+
+                    <LinearLayout style="@style/management_linearlayout_style">
+
+                        <ImageView
+                            style="@style/management_imageview_style"
+                            app:srcCompat="@drawable/suppliers" />
+
+                        <TextView
+                            style="@style/management_textview_style"
+                            android:text="الموردين" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/management_cardview_style"
+                    android:id="@+id/management_box">
+
+                    <LinearLayout style="@style/management_linearlayout_style">
+
+                        <ImageView
+                            style="@style/management_imageview_style"
+                            app:srcCompat="@drawable/box" />
+
+                        <TextView
+                            style="@style/management_textview_style"
+                            android:text="الخزانة" />
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+            </TableRow>
+
+        </TableLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

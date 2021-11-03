@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <TextView
+        style="@style/tv_title_style"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:text="المبيعات"
+        android:textColor="#FFD600" />
+
+    <Button
+        style="@style/btn_style_main_div"
+        android:drawableRight="@android:drawable/ic_input_add"
+        android:text="إصدار فاتورة للعملاء"
+        android:id="@+id/sell_client_bill_btn"
+      />
+
+    <Button
+        style="@style/btn_style_main_div"
+        android:drawableRight="@android:drawable/ic_input_add"
+        android:text="إصدار فاتورة للمندوبين"
+        android:id="@+id/sell_delegate_bill_btn"
+       />
+
+    <Button
+        style="@style/btn_style_main_div"
+        android:drawableRight="@drawable/edit"
+        android:text="تعديل فاتورة مندوب او عميل"
+        android:id="@+id/sell_bill_edit_btn"
+       />
+
+    <Button
+        style="@style/btn_style_main_div"
+        android:drawableRight="@drawable/money"
+        android:text="الأرباح"
+        android:id="@+id/sell_earnings_btn"
+        />
+    <Button
+        style="@style/btn_style_main_div"
+        android:drawableRight="@drawable/report_icon"
+        android:text="تقارير المبيعات للعملاء و المندوبين"
+        android:id="@+id/sell_reports_btn"
+   />
+
+    <Button
+        android:id="@+id/sell_orders_btn"
+        style="@style/btn_style_main_div"
+        android:drawableRight="@drawable/orders"
+        android:text="الطلبيات" />
+</LinearLayout>

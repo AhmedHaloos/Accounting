@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:weightSum="10">
+
+    <TextView
+        android:id="@+id/textView13"
+        style="@style/tv_title_style"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="الموردين" />
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        android:padding="4dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:layout_weight="7"
+        android:padding="8dp" />
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        style="@style/add_btn_style"
+        android:src="@android:drawable/ic_input_add"
+        android:text="إضافة مورد جديد"
+        android:id="@+id/supplier_add_btn">
+
+    </com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

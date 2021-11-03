@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:weightSum="10">
+
+    <TextView
+        android:id="@+id/textView9"
+        style="@style/tv_title_style"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:text="العروض"
+        android:textAlignment="center"
+        android:textColor="#FFD600"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/offer_add_new"
+        style="@style/btn_style_main_div"
+        android:drawableRight="@android:drawable/ic_input_add"
+        android:text="إضافة عرض جديد" />
+
+    <Button
+        android:id="@+id/offer_clients"
+        style="@style/btn_style_main_div"
+        android:text="تحفيزات العميل" />
+
+    <Button
+        android:id="@+id/offer_delegates"
+        style="@style/btn_style_main_div"
+        android:text="تحفيزات المناديب" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

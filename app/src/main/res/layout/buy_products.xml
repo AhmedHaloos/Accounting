@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <TextView
+        android:id="@+id/textView15"
+        style="@style/tv_title_style"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:text="منتجات" />
+
+    <SearchView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/border"
+        android:backgroundTint="@color/tv_background"
+        android:iconifiedByDefault="true"
+        android:padding="4dp"
+        android:id="@+id/buy_product_srch"/>
+
+    <Button
+        android:id="@+id/buy_barcode_product"
+        style="@style/btn_style_main_div"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="32dp"
+        android:layout_weight="1"
+        android:drawableRight="@drawable/qr_code"
+        android:text="بحث بالباركود" />
+
+    <Button
+        android:id="@+id/buy_add_product_btn"
+        style="@style/btn_style_main_div"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:drawableRight="@android:drawable/ic_input_add"
+        android:text="إضافة منتج" />
+
+
+</LinearLayout>

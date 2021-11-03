@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.engashm.possaror">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/background"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.POSSaror">
+        <activity
+            android:name=".stock.StockProductActivity"
+            android:exported="false" />
+        <activity
+            android:name=".offers.OffersDelegatesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".offers.OffersClientsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".offers.OffersAddNewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".stock.StockReports"
+            android:exported="false" />
+        <activity
+            android:name=".stock.StocktakingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".buy.ManagementOrdersActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CameraActivity" />
+        <activity android:name=".BarcodeActivity" />
+        <activity android:name=".buy.BuyBills" />
+        <activity android:name=".buy.BuyReports" />
+        <activity android:name=".buy.BuyGroups" />
+        <activity android:name=".buy.BuyProducts" />
+        <activity android:name=".ManagementActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".box.ManagementBoxActivity" />
+        <activity android:name=".clients.ManagementClientsActivity" />
+        <activity android:name=".offers.ManagementOfferActivity" />
+        <activity android:name=".delegates.ManagementDelegateActivity" />
+        <activity android:name=".buy.ManagementBuyActivity" />
+        <activity android:name=".stock.ManagementStockActivity" />
+        <activity android:name=".suppliers.ManagementSuppliersActivity" />
+        <activity android:name=".sell.ManagementSellActivity" />
+        <activity android:name=".sell.SellOrderActivity" />
+        <activity android:name=".sell.SellClientActivity" />
+        <activity android:name=".sell.SellDelegateActivity" />
+        <activity android:name=".sell.SellEarningsActivity" />
+        <activity android:name=".sell.SellReportsActvity" />
+        <activity android:name=".sell.SellBillsEditActivity" />
+        <activity
+            android:name=".clients.NewClientActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".delegates.NewDelegateActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".suppliers.NewSupplierActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".NewProductActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".buy.NewBuyBillActivity"
+            android:windowSoftInputMode="adjustResize" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.mlkit.vision.DEPENDENCIES"
+            android:value="barcode" />
+    </application>
+
+</manifest>
